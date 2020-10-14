@@ -69,7 +69,7 @@ header .hamburger {
 
 @media screen and (max-width: 1024px) {
   header {
-    width: 90%;
+    width: 87%;
   }
 }
 
@@ -90,11 +90,14 @@ header .hamburger {
 
 .mobile-menu {
   position: absolute;
+  z-index: 2;
   left: 0;
   width: 100%;
+  padding: 100px 0 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .mobile-menu ul {
@@ -165,6 +168,7 @@ header .hamburger {
 }
 
 .mobile-menu {
+  padding: 100px 0 370px;
   display: none;
 }
 
@@ -180,11 +184,185 @@ header .hamburger {
   font-size: 18px;
 }
 
+main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .details {
+  width: 40%;
+  margin-left: 11.5%;
+  margin-top: 94px;
+}
+
+main .details .details-header {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .details .details-header .new {
+  background-color: #242942;
+  border-radius: 15px;
+}
+
+main .details .details-header .new p {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  border-radius: 15px;
+  margin: 0;
+  padding: 3px 12px;
+  text-transform: uppercase;
+}
+
+main .details .details-header .monograph {
+  color: #a0a1ac;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 4px;
+  margin-left: 15px;
+}
+
+main .details h1 {
+  margin: 15px 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 64px;
+  text-transform: uppercase;
+  color: #242942;
+  line-height: 1;
+}
+
+main .details .subtitle {
+  width: 280px;
+  margin-top: 32px;
+  color: #5b5f71;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+main .details .details-footer {
+  margin-top: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .details .details-footer button {
+  width: 184px;
+  height: 48px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ff5c5c;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+main .details .details-footer button:hover {
+  opacity: 0.8;
+}
+
+main .details .details-footer p {
+  margin-left: 25px;
+  color: #a0a1ac;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+main .main-image {
+  position: absolute;
+  width: 67%;
+  top: 56px;
+  right: -260px;
+}
+
+@media screen and (max-width: 1024px) {
+  main .details {
+    width: 50%;
+    margin-left: 6%;
+  }
+  main .main-image {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .details {
+    width: 78%;
+    margin: 130px auto 70px;
+  }
+  main .details .subtitle {
+    width: 500px;
+  }
+  main .main-image {
+    position: relative;
+    width: 90%;
+    top: 20px;
+    right: -40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .details {
+    width: 87%;
+    margin: 130px auto 70px;
+  }
+  main .details h1 {
+    font-size: 39px;
+  }
+  main .details .subtitle {
+    width: 280px;
+  }
+  main .details .details-footer button {
+    width: 160px;
+    height: 40px;
+  }
+  main .details .details-footer p {
+    font-size: 13px;
+    margin-left: 10px;
+    letter-spacing: 3px;
+  }
+  main .main-image {
+    position: relative;
+    width: 460px;
+    top: 20px;
+    right: -20px;
+  }
+}
+
 body {
+  max-width: 1440px;
+  margin: auto;
+  overflow-x: hidden;
   position: relative;
   font-family: "Barlow", sans-serif;
-  max-width: 1440px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 body .bg-pattern {
